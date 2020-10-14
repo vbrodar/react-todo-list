@@ -10,7 +10,7 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState("all");
   const [filteredTodos, setFilteredTodos] = useState([]);
- 
+
   //useEffect
   useEffect(() => {
     const filterHandler = () => {
@@ -28,11 +28,9 @@ function App() {
     };
 
     filterHandler();
-    
   }, [todos, status]);
 
   // Functions
-
 
   return (
     <div className="App">
@@ -52,6 +50,19 @@ function App() {
         setTodos={setTodos}
         todos={todos}
       />
+      <footer>
+      <div className="social-links">
+        <a href="https://github.com/vbrodar" rel="noopener noreferrer" target="_blank">
+          <i className="fa fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="https://gitlab.com/vbrodar" rel="noopener noreferrer" target="_blank">
+        <i class="fa fa-gitlab" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.facebook.com/thewaywardone" rel="noopener noreferrer" target="_blank">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+      </div>
+      </footer> 
     </div>
   );
 }

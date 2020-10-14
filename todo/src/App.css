@@ -24,6 +24,19 @@ form {
   justify-content: center;
   align-items: center;
 }
+.social-links{
+  display:flex;
+  justify-content:center;
+  padding:5px;
+  margin:center;
+  position: relative;
+ 
+}
+.social-links i {
+  font-size: 4em;
+  color:white;
+  padding:50px;
+}
 form input,
 form button {
   padding: 0.5rem;
@@ -31,7 +44,6 @@ form button {
   border: none;
   background: white;
   font-family: "Alegreya", serif;
-  
 }
 form button {
   color: #314755;
@@ -63,7 +75,6 @@ form button:hover {
   justify-content: space-between;
   align-items: center;
   transition: all 1s ease;
-  
 }
 .filter-todo {
   padding: 1rem;
@@ -75,7 +86,7 @@ form button:hover {
 
 .trash-btn,
 .complete-btn {
-  background:#e65245;
+  background: #e65245;
   color: white;
   border: none;
   padding: 1rem;
@@ -88,7 +99,6 @@ form button:hover {
 .todo-item {
   padding: 0rem 0.5rem;
   font-family: "Alegreya", serif;
-
 }
 
 .fa-trash,
